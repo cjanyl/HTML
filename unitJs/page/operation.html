@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript">
+    var arr = new Array(1,8,34,45,7,91,2,2,3,3,4,4,5,5,4,3,2,1,1);
+
+    // for(var i = 0,len = arr.length;i < len-1;i++){
+    //     for(var j = i+1;j<len;j++) {
+    //         if(arr[i] == arr[j]){
+    //             arr.splice(j, 1);
+    //             i--;
+    //         }
+    //     }
+    // }
+
+    var arr2 = new Array();
+    arr2.push(arr[0]);
+    for(var i = 1,len = arr.length;i < len-1;i++){
+        for(var j = 0;j<arr2.length;j++){
+            if(arr[i] == arr2[j]){
+                break;
+            }
+            j == arr2.length-1?arr2.push(arr[i]):1;
+        }
+    }
+    //document.write(arr+"====");
+    document.write(arr2);
+    arr.sort();
+    document.write("-----------"+arr);
+</script>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    var arr=[];
+    arr.push(3);
+    arr.push(5);
+    arr.push(8);
+    arr.push(9);
+
+//    console.log(arr);
+//
+////    arr.shift();
+//    var item=arr.pop();
+//    console.log(item);
+
+    arr.forEach(function (item,index) {
+        console.log(index+' : '+item);
+    });
+
+    console.log(arr.indexOf(7));
+    
+//    var flag=arr.every(function (item,index,array) {
+//        return item%2===1;
+//    });
+
+    var flag=arr.some(function (item,index,array) {
+        return item%2===0;
+    });
+
+    var arr2=arr.filter(function (item) {
+        return item%2==1;
+    });
+
+    var arr=arr.map(function (item) {
+        return item+5;
+    });
+
+    console.log("flag: "+flag);
+    console.log(arr2);
+    console.log(arr);
+</script>
+</body>
+</html>

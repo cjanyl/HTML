@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    function add(m,n) {
+        arguments[0]=100;
+        var a=arguments[0];
+        var b=arguments[1];
+        console.log(arguments.length);
+        console.log('a='+a+' b='+b);
+        console.log(m+n);
+    }
+
+    function max(a) {
+
+//        var r=a || 10;
+//
+//        return a && a+3;
+
+//        console.log(r);
+
+        if(arguments.length==0){
+            return '至少包含一个数字';
+        }else if(arguments.length==1){
+            return arguments[0];
+        }else{
+            var num=arguments[0];
+            for(var i=1,len=arguments.length;i<len;i++){
+//                if(num<arguments[i]){
+//                    num=arguments[i];
+//                }
+//
+                num<arguments[i] ? num=arguments[i] : num;
+
+
+            }
+
+            return num;
+        }
+    }
+
+//    var add=new Function(console.log('haha'));
+
+//    undefined null number boolean string object
+//    typeof: undefined object number boolen string function
+
+//    console.log(typeof add);
+
+    console.log(max(10));
+
+</script>
+</body>
+</html>

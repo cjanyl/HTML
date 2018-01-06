@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    var arr1=new Array(10);
+    var arr2=[1,'hello',2,4,true];
+    var arr3=new Array(10,20,30,40,50,60);
+    var arr4=new Array();
+
+    var o=new Object();
+
+    console.log(typeof  arr1);
+    console.log(typeof  arr2);
+    console.log(typeof  arr3);
+
+//    console.log(typeof o ==typeof arr1);
+
+//    console.log(arr2.length);
+    //    var s_arr2=arr2.join('-');
+    //
+    //    console.log(s_arr2.length);
+
+//    document.write(o);
+    document.write(arr3.join('-'));
+
+//    slice();
+
+//    var arr_new=arr3.slice(1,arr3.length+1);
+//    document.write(arr_new.join('-'));
+
+    document.write('<br/>');
+
+
+//    splice()
+
+    var res=arr3.splice(0,3,100,200,300,400);
+    console.log(arr3);
+
+    document.write(arr3.join('-'));
+
+    document.write('<br/>');
+
+    document.write(res);
+
+
+
+    var arr=[1,2,3,3,3,5,7];
+
+
+
+</script>
+</body>
+</html>

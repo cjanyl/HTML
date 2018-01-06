@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组去重</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    //数组去重
+    var arr=[1,2,2,4,5,2,5];
+    var arr_new=[arr[0]];
+
+    for(var i=1;i<arr.length;i++){
+        if(arr_new.indexOf(arr[i])==-1){
+            arr_new.push(arr[i]);
+        }
+    }
+
+    console.log(arr_new);
+//
+//    var len=arr.length;
+//    for(var i=0;i<len-1;i++){
+//        for(var j=i+1;j<len;j++){
+//            if(arr[i]===arr[j]){
+//                arr.splice(j,1);
+//                len--;
+//                i--;
+//            }
+//        }
+//    }
+//    console.log(arr);
+//
+//    var arr2=[10,20];
+
+
+//    数组连接
+//    var arr3=arr+arr2;  //arr.toString()+arr2.toString()
+//    var arr3=arr.concat(arr2);  //arr.toString()+arr2.toString()
+//    arr3.reverse();
+//    console.log(arr3);
+
+//    数组排序
+//    var arr_str=['banana','peer','apple'];
+//    arr_str.sort();
+//    console.log(arr_str);
+//
+//    var arr_num=[1,31,4,5,100];
+//
+//    arr_num.sort(function (a,b) {
+//        return b-a;
+//    });
+//    console.log(arr_num);
+
+
+
+
+
+
+</script>
+</body>
+</html>

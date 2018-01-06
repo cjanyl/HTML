@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    var a=12;
+    function add(m,n) {
+        var a=1;
+        var r= m+n+a;
+        console.log(r);
+    }
+
+
+//    函数表达式
+    var sub=function (a,b) {
+        return a-b;
+    };
+
+//    sub=null;
+//    console.log(add(3,2));
+
+//    闭合函数,自动运行
+
+    (function (s){
+//        alert('hello '+s);
+    })('java');
+//
+//    (function () {
+//        var s='hello world';
+//        console.log(s);
+//    })()
+
+
+    (function () {
+        s='nihao';
+        console.log(s);
+        var s='hello world';
+
+
+//        var s;
+//        console.log(s);
+//        s='hello world';
+    })()
+
+</script>
+</body>
+</html>
